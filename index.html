@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credit Card</title>
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale= 1">
+    </head>
+    <body>
+        <div class="all">
+            <div class="purple">
+            </div>
+              <div class="main">
+                <div class="frontcard">
+                    <img id="frontcard" src="./images/bg-card-front.png">
+                    <h2 id="cardnumbers">0000 0000 0000 0000</h2>
+                    <p id="cardnames">Jon Downey</p> <p id="date">00/00</p>
+                </div>
+                <div class="backcard">
+                    <img id="backcard" src="./images/bg-card-back.png">
+                    <p id="cvcs">000</p>
+                </div>
+                <div id="complete" class="complete">
+                    <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+                    <h1>Thank You</h1>
+                    <p>We've added your card details</p>
+                    <button id="contbtn">Continue</button>
+                </div>
+                <div id="text" class="text">
+                    <p>CARHOLDER NAME</p>
+                    <input id="cardname" placeholder="e.g. Jane Applespeed">
+                    <p>CARD NUMBER</p>
+                    <input id="cardnumber" placeholder="e.g 1234 5678 9123 0000">
+                    <p id="validnumber">Put a valid credit card number</p>
+                    <p>EXP. DATE (MM/YY)</p>
+                    <input id="cardmonth" placeholder="MM">
+                    <p id="validmonth">Put a valid month</p>
+                    <input id="cardyear" placeholder="YY">
+                    <p id="blankyear">Put a valid year</p>
+                    <p id="CVC">CVC</p>
+                    <input id="inputCvc" placeholder="e.g. 123">
+                    <p id="validcvc">Put a valid CVC</p>
+                    <button id="button">Confirm</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
