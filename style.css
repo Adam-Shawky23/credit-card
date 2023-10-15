@@ -1,0 +1,136 @@
+body{
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.all{
+    display: flex;
+}
+.main{
+    width:60%;
+    height:100%;
+    
+}
+.frontcard{
+    position: relative;
+    left:-330px;
+    top:60px;
+}
+.backcard{
+    position: relative;
+    left:-280px;
+    top:-100px;
+}
+.purple{
+    width:40%;
+    height:auto;
+    background-image: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+button{
+    background-color: hsl(278, 68%, 11%);
+    color:white;
+    display: block;
+}
+.text{
+    padding:0px;
+    position: relative;
+    top:-640px;
+    left:250px;
+    display: block;
+    
+}
+#cardmonth{
+    border-color: black;
+}
+#blankyear{
+    color: red;
+    display: none;
+}
+#validmonth{
+    color: red;
+    display: none;
+}
+#validnumber{
+    color: red;
+    display: none;
+}
+#validcvc{
+    color: red;
+    display: none;
+}
+#cardnumbers{
+    position: relative;
+    top:-155px;
+    left:50px;
+    font-size: 40px;
+}
+#cardnames{
+    position: relative;
+    top:-150px;
+    left:30px;
+    font-size: 20px;
+}
+#date{
+    position: relative;
+    top:-190px;
+    left:350px;
+    font-size: 20px;
+}
+#cvcs{
+    position: relative;
+    top:-160px;
+    left:350px;
+    font-size: 20px;
+}
+.complete{
+    text-align: center;
+    position: relative;
+    top:-600px;
+    left:60px;
+    font-size: larger;
+    display: none;
+}
+#contbtn{
+    width:30%;
+    position: relative;
+    left:280px;
+    height:25px;
+    border: none;
+    border-radius: 5px;
+}
+@media only screen and (max-width:875px){
+    .text{
+        left: 330px;
+    }
+    .backcard{
+        left:-200px;
+    }
+    .frontcard{
+        left:-250px;
+    }
+}
+@media only screen and (max-width:600px){
+    .text{
+        left:150px;
+        top:-50px;
+    }
+    .backcard{
+        left:0px;
+    }
+    .frontcard{
+        left:-70px;
+    }
+    #cardnumbers{
+        top: -180px;
+        left:30px;
+        width:max-content;
+    }
+    .complete{
+        top:-50px;
+    }
+    #contbtn{
+        left:120px;
+    }
+}
